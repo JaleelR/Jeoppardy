@@ -1,0 +1,25 @@
+/* some colors you may find useful:
+  #115ff4
+  #060ce9
+  #28a200
+  #8d2ab5
+  #74119c
+*/
+h1{
+  text-align: center;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  
+}
+.table{
+  margin: auto;
+  width: 20vw;
+height: 20vh;
+  border: 1px solid blue;
+  background-color:   #060ce9;
+  text-align: center;
+  text-decoration-color: white;
+}
