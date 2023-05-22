@@ -51,7 +51,7 @@ let idFound = new Set();
 //gets the categories for jeopardy.
 //loops through each category and returns the id of each
 async function getCategoryIds() {
-const res = await axios.get('http://jservice.io/api/categories',{params: {count : 100}});
+const res = await axios.get('https://jservice.io/api/categories',{params: {count : 100}});
 const cat = res.data;
 const id = cat.map((v,i) => cat[i].id);
 const catIds = randomCat(id);
@@ -108,7 +108,7 @@ function randomQuestion(clues){
 //getting the category info(title & clues) from API 
 
 async function getCategory(catId) {
-const res = await axios.get("http://jservice.io/api/category", {params: {id : catId}});
+const res = await axios.get("https://jservice.io/api/category", {params: {id : catId}});
 //const newInfo = res.data;
 let newInfo = [];
      while(newInfo.length < 6){
